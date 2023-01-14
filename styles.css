@@ -1,0 +1,196 @@
+/* Color Scheme
+    Sunglow          #ffd524
+    American Yellow  #ecb602
+    American Purple  #55185d
+    Russian Viotel   #290849
+    light text color #FFEA92
+    
+    Based on that color scheme i used:
+    yellow           #ecb602
+    hover elements yellow
+                     #ce8e02
+    light purple bg  #55185d
+    dark purple bg   #0e0318
+    light text       #fff3bf
+    dark text        #0e0318
+*/
+:root {
+  --text-light: #fff3bf;
+  --text-dark: #0e0318;
+  --bg-dark: #0e0318;
+  --bg-darkish: #55185d;
+  --yellow-hover: #ce8e02;
+  --yellow: #ecb602;
+  --error: #dc143c; /*crimson*/
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", "sans-serif";
+  color: var(--text-light);
+  overflow-y: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 10px;
+  background-color: var(--yellow);
+  position: absolute;
+}
+
+main {
+  height: 90vh;
+  background: linear-gradient(var(--bg-darkish), var(--bg-dark));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer {
+  height: 10vh;
+  background-color: var(--bg-dark);
+  text-align: center;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  width: 75%;
+  height: 66%;
+  margin: auto;
+  display: none;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.button {
+  background-color: var(--yellow);
+  width: 40%;
+  min-width: 100px;
+  max-width: 170px;
+  padding: 10px;
+  margin: 0 auto;
+  box-shadow: 5px 5px black;
+  transition: 100ms ease-in-out;
+  position: inherit;
+  color: var(--text-dark);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.button:hover {
+  background-color: var(--yellow-hover);
+}
+
+.button:active {
+  box-shadow: 0px 0px var(--bg-dark);
+  transform: translate(3px, 3px);
+  /* transition-property: all; default value */
+  transition-duration: 100ms;
+  transition-timing-function: ease-in-out;
+}
+
+.submit {
+    display: flex;
+    place-content: center;
+    place-items: center;
+}
+
+.submit > p {
+    margin-right: 5px; 
+}
+
+a {
+  text-decoration: underline;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+input.input {
+  border: none;
+  border-bottom: solid 1px;
+  padding: 10px 5px;
+  font-size: 1.2rem;
+  background-color: transparent;
+  color: var(--text-light);
+} 
+
+input.input::placeholder {
+  color: var(--text-light);
+  opacity: 0.6;
+}
+
+input.input:focus-visible {
+  /* Found that through opera dev tools -> styles -> Force element state */
+  outline: none;
+  border-bottom: solid 5px;
+}
+
+.checkbox {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 7px;
+  border: 1px solid var(--text-light);
+  width: 60%;
+  min-width: 200px;
+  max-width: 280px;
+  padding: 10px;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: start;
+}
+
+.checkbox:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.disabled {
+  opacity: 0.5
+}
+
+.valid {
+  border-color: var(--yellow) !important;
+  background-color: transparent;
+}
+
+.invalid {
+  border-color: var(--error) !important;
+  background-color: transparent;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 1.1rem;
+    }
+    
+    svg {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (min-width: 992px) {
+    html {
+        font-size: 1.2rem;
+    }
+
+    .container {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1200px) {
+    html {
+        font-size: 1.3rem;
+    }
+}

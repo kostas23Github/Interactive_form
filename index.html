@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Form</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css" type="text/css">
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" defer></script>
+    <script type="module" src="./index.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <p class="progress-bar"></p>
+    </header>
+    <main>
+        <div class="container welcome">
+            <h1>Would you like to join our
+                Frontend Development Industry Training Program?</h1>
+            <h3>Answer each question carefully to be submitted to this cousce.</h3>
+            <p class="button welcomeBtn">Let's go!</p>
+        </div>
+        <div class="container first">
+            <h2>Awesome! To begin with, can we have your name?<span title="This question is required!"> *</span></h2>
+            <input class="input" id="nameInput" placeholder="Type your answer here..">
+            <div class="button submit" type="submit">
+                <p>OK</p>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20px" height="20px">
+                    <path
+                        d="M 41.9375 8.625 C 41.273438 8.648438 40.664063 9 40.3125 9.5625 L 21.5 38.34375 L 9.3125 27.8125 C 8.789063 27.269531 8.003906 27.066406 7.28125 27.292969 C 6.5625 27.515625 6.027344 28.125 5.902344 28.867188 C 5.777344 29.613281 6.078125 30.363281 6.6875 30.8125 L 20.625 42.875 C 21.0625 43.246094 21.640625 43.410156 22.207031 43.328125 C 22.777344 43.242188 23.28125 42.917969 23.59375 42.4375 L 43.6875 11.75 C 44.117188 11.121094 44.152344 10.308594 43.78125 9.644531 C 43.410156 8.984375 42.695313 8.589844 41.9375 8.625 Z" />
+                </svg>
+            </div>
+        </div>
+        <div class="container second">
+            <h2>...and your e-mail, please :)<span title="This question is required!"> *</span></h2>
+            <input class="input" id="emailInput" placeholder="Type your answer here..">
+            <div class="button submit" type="submit">
+                <p>OK</p>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20px" height="20px">
+                    <path
+                        d="M 41.9375 8.625 C 41.273438 8.648438 40.664063 9 40.3125 9.5625 L 21.5 38.34375 L 9.3125 27.8125 C 8.789063 27.269531 8.003906 27.066406 7.28125 27.292969 C 6.5625 27.515625 6.027344 28.125 5.902344 28.867188 C 5.777344 29.613281 6.078125 30.363281 6.6875 30.8125 L 20.625 42.875 C 21.0625 43.246094 21.640625 43.410156 22.207031 43.328125 C 22.777344 43.242188 23.28125 42.917969 23.59375 42.4375 L 43.6875 11.75 C 44.117188 11.121094 44.152344 10.308594 43.78125 9.644531 C 43.410156 8.984375 42.695313 8.589844 41.9375 8.625 Z" />
+                </svg>
+            </div>
+        </div>
+        <div class="container third">
+            <h2>Now it's time to answer for 2 Qualification Questions.<br>
+                Are you ready?</h2>
+            <p class="button welcomeBtn">Let's go!</p>
+        </div>
+        <div class="container fourth">
+            <h2>In your opinion, what are the fundamental programming languages needed for frontend development?<span
+                    title="This question is required!"> *</span></h2>
+            <input class="input" placeholder="Type your answer here..">
+            <div class="button submit" type="submit">
+                <p>OK</p>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20px" height="20px">
+                    <path
+                        d="M 41.9375 8.625 C 41.273438 8.648438 40.664063 9 40.3125 9.5625 L 21.5 38.34375 L 9.3125 27.8125 C 8.789063 27.269531 8.003906 27.066406 7.28125 27.292969 C 6.5625 27.515625 6.027344 28.125 5.902344 28.867188 C 5.777344 29.613281 6.078125 30.363281 6.6875 30.8125 L 20.625 42.875 C 21.0625 43.246094 21.640625 43.410156 22.207031 43.328125 C 22.777344 43.242188 23.28125 42.917969 23.59375 42.4375 L 43.6875 11.75 C 44.117188 11.121094 44.152344 10.308594 43.78125 9.644531 C 43.410156 8.984375 42.695313 8.589844 41.9375 8.625 Z" />
+                </svg>
+            </div>
+        </div>
+        <div class="container fifth">
+            <h2>Why would you like to work as a frontend developer?<span title="This question is required!"> *</span>
+            </h2>
+            <input class="input" placeholder="Type your answer here..">
+            <div class="button submit" type="submit">
+                <p>OK</p>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20px" height="20px">
+                    <path
+                        d="M 41.9375 8.625 C 41.273438 8.648438 40.664063 9 40.3125 9.5625 L 21.5 38.34375 L 9.3125 27.8125 C 8.789063 27.269531 8.003906 27.066406 7.28125 27.292969 C 6.5625 27.515625 6.027344 28.125 5.902344 28.867188 C 5.777344 29.613281 6.078125 30.363281 6.6875 30.8125 L 20.625 42.875 C 21.0625 43.246094 21.640625 43.410156 22.207031 43.328125 C 22.777344 43.242188 23.28125 42.917969 23.59375 42.4375 L 43.6875 11.75 C 44.117188 11.121094 44.152344 10.308594 43.78125 9.644531 C 43.410156 8.984375 42.695313 8.589844 41.9375 8.625 Z" />
+                </svg>
+            </div>
+        </div>
+        <div class="container sixth">
+            <h2>Have you read the Program Description carefully?<span title="This question is required!"> *</span></h2>
+            <p class="button welcomeBtn">Of course!</p>
+        </div>
+        <div class="container seventh">
+            <h2>The training will be hosted entirely online, is that OK for you?
+                <span title="This question is required!"> *</span>
+            </h2>
+            <div class="checkbox">
+                <input type="checkbox" name="yes" id="yes" value="yes">
+                <label for="yes">Yes, perfect!</label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" name="no" id="no" value="no">
+                <label for="no">No, it's not for me :/</label>
+            </div>
+            <div class="button submit" type="submit">
+                <p>OK</p>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20px" height="20px">
+                    <path
+                        d="M 41.9375 8.625 C 41.273438 8.648438 40.664063 9 40.3125 9.5625 L 21.5 38.34375 L 9.3125 27.8125 C 8.789063 27.269531 8.003906 27.066406 7.28125 27.292969 C 6.5625 27.515625 6.027344 28.125 5.902344 28.867188 C 5.777344 29.613281 6.078125 30.363281 6.6875 30.8125 L 20.625 42.875 C 21.0625 43.246094 21.640625 43.410156 22.207031 43.328125 C 22.777344 43.242188 23.28125 42.917969 23.59375 42.4375 L 43.6875 11.75 C 44.117188 11.121094 44.152344 10.308594 43.78125 9.644531 C 43.410156 8.984375 42.695313 8.589844 41.9375 8.625 Z" />
+                </svg>
+            </div>
+        </div>
+        <div class="container eight">
+            <h2>Thank you for your time, we will contact you as soon as we can with further details about your
+                application.</h2>
+            <h3>In the meantime feel free to visit our <a href="https://www.google.com/" target="_blank">site</a>.</h3>
+        </div>
+
+    </main>
+    <footer>
+        <div>
+            <p class="copywrite">This project was created by a frontend developer.</p>
+            <p class="copywrite">To find out more about his work click
+                <a href="https://github.com/kostas23Github" target="_blank">
+                    here.
+                </a>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
