@@ -2,3 +2,4 @@
 # Files to not be published to github.
 
 /Later.js
+/.gitignore
