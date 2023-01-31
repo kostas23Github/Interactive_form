@@ -15,8 +15,6 @@
     dark text        #0e0318
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
-
 :root {
   --text-light: #fff3bf;
   --text-dark: #0e0318;
