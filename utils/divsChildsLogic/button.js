@@ -5,12 +5,19 @@ import { displayNextDiv } from '../displayDivsLogic/nextDiv.js'
 
 function buttonWillWork(button, arrayOfDivs, index) {
   const listener = (e) => {
-    if (e.path[1].disabled || e.path[0].disabled) {
-      return
+    const path = e.composedPath ? e.composedPath() : [e.target];
+    
+    // Check if the button or the immediate ancestor is disabled
+    if (path[0].disabled || (path[1] && path[1].disabled)) {
+      return;
     }
-    return displayNextDiv(arrayOfDivs, index)
+    
+    // Call displayNextDiv with the current index and array of divs
+    displayNextDiv(arrayOfDivs, index);
   }
-    return button.addEventListener("click", listener, { once: true }, false)
+
+  // Add event listener to the button, ensuring it only fires once
+  button.addEventListener("click", listener, { once: true });
 }
 
 export { buttonWillWork }
